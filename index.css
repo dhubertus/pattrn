@@ -1,0 +1,292 @@
+@import 'flex-cards.css';
+@import 'nav-bar.css';
+
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3000px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background: #FFF;
+  min-width: 320px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  min-height: 50px;
+  background: #2F2235;
+  width: 100%;
+  color: #F2F2F2;
+  /*font-weight: 300;*/
+}
+
+#header p {
+  margin: 0 50px 0 50px;
+}
+
+#pattrn-logo {
+  font-size: 1.5em;
+}
+
+#student-name {
+  font-weight: 600;
+}
+
+#logo-party {
+  color: #34D1D1;
+}
+
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  min-height: 125px;
+  width: 90%;
+}
+
+.section-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  width: 15%;
+}
+
+.section-title p {
+  margin: 0;
+}
+
+.grey-line-container {
+  height: 100px;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.grey-line {
+  border-bottom: 1px solid #D1D2D3;
+  height: 50%;
+  width: 90%;
+}
+
+#accordian-tab-container {
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+#accordian-bar-container {
+  display: none;
+}
+
+.tab-container {
+  width: 80.2%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+    /*border-top: 1px solid #D1D2D3;
+    border-left: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;*/
+}
+
+.tab-btn {
+  width: 25%;
+  height:50px;
+  border: 0;
+  background: #f2f2f2;
+  border-bottom: 1px solid #D1D2D3;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: #fff;
+  border-top: 1px solid #D1D2D3;
+  border-left: 1px solid #D1D2D3;
+  border-right: 1px solid #D1D2D3;
+  border-bottom: none;
+}
+
+.tab-body-container {
+  display: flex;
+  height:300px;
+  width: 76%;
+  padding:2%;
+  border-left: 1px solid #D1D2D3;
+  border-right: 1px solid #D1D2D3;
+  border-bottom: 1px solid #D1D2D3;
+}
+
+.accordian-img {
+  background: url('images/img-p-holder.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40%;
+}
+
+.accordian-p {
+  height: 100%;
+  width: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.view-code-btn {
+  height: 50px;
+  width: 200px;
+  border: none;
+  background: #3F3244;
+  margin-top: 20px;
+  color: #F2F2F2;
+  font-weight: 300;
+  border-radius: 1px;
+}
+
+.view-code-btn:hover {
+  color: #34D1D1;
+}
+
+@media screen and (max-width: 800px) {
+  /*html,
+  body {
+    height: 3000px;
+  }*/
+
+  .section-title-container {
+    flex-direction: column;
+  }
+
+  .section-title {
+    width: 85%;
+    justify-content: center;
+  }
+
+  .grey-line {
+    border-top: 1px solid #D1D2D3;
+    border-bottom: none;
+  }
+
+  #accordian-tab-container {
+    display: none;
+  }
+
+  #accordian-bar-container {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #bar-container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 800px;
+  }
+
+  .accordian-p {
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    width: 100%;
+    padding: 0;
+    height: 400px;
+    /*overflow: hidden;
+    text-overflow: clip ellipsis;*/
+    border: 1px solid #D1D2D3;
+    /*width: 250px;*/
+    /*white-space: nowrap;*/
+    overflow: hidden;
+  }
+
+  .accordian-img {
+    width: 100%;
+    background-size: contain;
+    height: 194px;
+    border-left: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;
+  }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+
+  .accordion-bar {
+    background-color: #f2f2f2;
+    color: #666666;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+    min-width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #D1D2D3;
+    border-left: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;
+  }
+
+  .bar-4 {
+    border: 1px solid #D1D2D3;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+  .accordion-bar.active,
+  .accordion-bar:hover {
+      background-color: #ddd;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      /*padding: 0 18px;*/
+      background-color: white;
+      display: none;
+      width: 100%;
+      height:596px;
+  }
+
+  .active-two {
+    background: #fff;
+    border-top: 1px solid #D1D2D3;
+    border-left: 1px solid #D1D2D3;
+    border-right: 1px solid #D1D2D3;
+    border-bottom: none;
+  }
+
+@media screen and (max-width: 470px) {
+  #header p {
+    margin: 0 15px 0 15px;
+  }
+
+  #student-name {
+    font-size: 70%;
+  }
+}

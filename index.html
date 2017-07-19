@@ -184,12 +184,35 @@
       <p class='link'>Navigation Link 2</p>
       <p class='link'>Navigation Link 3</p>
 
-      <input type="text" name="" value="" placeholder="Search">
+      <input id='nav-bar-input' type="text" name="" value="" placeholder="Search">
 
     </section>
 
-    <script type="text/javascript" src='./accordianTabs.js'>
+    <section id='nav-bar-drop'>
+      <section id='menu-tab'>
+        <section id='menu-button' onClick='openMenu()'>
+          <p>MENU</p>
+        </section>
+      </section>
+      <section id='drop-link-container'>
+        <article class="drop-link drop-menu-item">
+          <p>Navigation Link 1</p>
+        </article>
+        <article class="drop-link drop-menu-item">
+          <p>Navigation Link 2</p>
+        </article>
+        <article class="drop-link drop-menu-item">
+          <p>Navigation Link 3</p>
+        </article>
+        <section id='drop-input-container' class='drop-menu-item'>
+          <input id='drop-input' type="text" name="" value="" placeholder="Search">
+        </section>
+      </section>
+    </section>
 
+    <script type="text/javascript" src='./accordianTabs.js'>
     </script>
+    <script type="text/javascript" src='./menu-bar.js'></script>
+
   </body>
 </html>

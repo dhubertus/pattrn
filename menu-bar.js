@@ -6,13 +6,4 @@ const openMenu = () => {
   } else {
     item.style.display = 'flex'
   }
-
-
-  // for(let i = 0; i < items.length; i++) {
-  //   if(items[i].style.display === 'flex') {
-  //     items[i].style.display = 'none'
-  //   } else {
-  //     items[i].style.display = 'flex'
-  //   }
-  // }
 }

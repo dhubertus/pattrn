@@ -159,10 +159,18 @@ body {
   color: #F2F2F2;
   font-weight: 300;
   border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .view-code-btn:hover {
   color: #34D1D1;
+}
+
+.rogue-btn1 {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -255,14 +263,12 @@ body {
     border: 1px solid #D1D2D3;
   }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
   .accordion-bar.active,
   .accordion-bar:hover {
       background-color: #ddd;
   }
 
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
       display: flex;
       flex-direction: column;
@@ -282,6 +288,15 @@ body {
     border-right: 1px solid #D1D2D3;
     border-bottom: none;
   }
+
+  .rogue-btn1 {
+    display: flex;
+  }
+
+  .rogue-btn2 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 470px) {
   #header p {
